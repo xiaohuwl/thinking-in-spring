@@ -33,4 +33,11 @@ public class Person {
                 ", age=" + age +
                 '}';
     }
+
+    public static Person createPerson(){
+        Person person = new Person();
+        person.setAge(18);
+        person.setName("huwl");
+        return person;
+    }
 }
