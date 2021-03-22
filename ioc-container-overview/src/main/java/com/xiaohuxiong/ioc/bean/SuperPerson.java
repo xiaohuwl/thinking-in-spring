@@ -16,8 +16,9 @@ public class SuperPerson extends Person {
 
     @Override
     public String toString() {
-        return "SuperPerson{" +
+        return "SuperUser{" +
                 "addr='" + addr + '\'' +
-                '}';
+                "} " + super.toString();
+
     }
 }

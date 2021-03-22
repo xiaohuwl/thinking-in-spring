@@ -6,5 +6,8 @@
 
     <import resource="classpath:/META-INF/dependency-lookup-context.xml"/>
 
+    <bean class="com.xiaohuxiong.spring.ioc.denpendency.injection.PersonHold" >
+        <constructor-arg name="person" ref="superPerson" />
+    </bean>
 
 </beans>

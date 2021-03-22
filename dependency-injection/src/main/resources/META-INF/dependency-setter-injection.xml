@@ -4,6 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <import resource="classpath:/META-INF/dependency-lookup-context.xml"/>
+    <import resource="classpath:/META-INF/dependency-lookup-context.xml" />
+
+    <bean class="com.xiaohuxiong.spring.ioc.denpendency.injection.PersonHold" >
+        <property name="person" ref="superPerson" />
+    </bean>
 
 </beans>
